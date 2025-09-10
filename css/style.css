@@ -1,0 +1,38 @@
+/* --- Bases styles --- */
+
+/* Define fonts style */
+html {
+  /* 62.5% of 16px is 10px.
+    The because the default value on navigator is 16px */
+  font-size: 62.5%;
+}
+body {
+  /* Text base style*/
+  font-family: "Montserrat", Helvetica, sans-serif;
+  color: #000;
+  font-size: 2.4rem; /* 24px */
+  line-height: 1.5;
+  margin: 0;
+}
+h1,
+h2,
+h3 {
+  /* Headings style */
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+h1 {
+  /* Main title style */
+  font-size: 8rem; /* 80px */
+  font-weight: 800;
+}
+h2 {
+  /* Secondary title style */
+  font-size: 6rem; /* 60px */
+  font-weight: 600;
+}
+h3 {
+  /* Tertiary title style */
+  font-size: 4rem; /* 40px */
+  font-weight: 400;
+}
