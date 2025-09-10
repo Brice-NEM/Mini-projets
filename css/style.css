@@ -36,3 +36,10 @@ h3 {
   font-size: 4rem; /* 40px */
   font-weight: 400;
 }
+
+/* Profil image */
+.profil {
+  width: 300px;
+  margin: 2rem 2rem;
+  border-radius: 50%;
+}
