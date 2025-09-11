@@ -14,55 +14,153 @@
     <link href="css/style.css" rel="stylesheet" />
   </head>
   <body>
-    <div>
+    <h1 class="title">Profil personnel</h1>
+    <section class="container hero">
       <picture>
         <source srcset="/images/profil.webp" type="image/webp" />
         <source srcset="/images/profil.jpg" type="image/jpg" />
         <img class="profil" src="/images/profil.jpg" alt="Photo de profil" />
       </picture>
       <header>
-        <h1>Brice Ngah Essengue</h1>
-        <h2>Ingenieur Systemes et Developpeur Fullstack</h2>
+        <h2>Brice Ngah Essengue</h2>
+        <h3>Ingenieur Systemes et Developpeur Fullstack</h3>
         <nav>
-          <a href="https://t.me/BriceNgah" target="_blank" rel="noopener noreferrer">
-            <svg class="icon">
-              <use xlink:href="images/sprite.svg#telegram"></use>
-            </svg>
-        </a>
-          <a
-            href="https://twitter.com/BriceNgah"
-            target="_blank"
-            rel="noopener noreferrer">
-            <svg class="icon">
-              <use xlink:href="images/sprite.svg#twitter"></use>
-            </svg>
-        </a>
-          <a
-            href="https://www.instagram.com/bricengah/"
-            target="_blank"
-            rel="noopener noreferrer">
-            <svg class="icon">
-              <use xlink:href="images/sprite.svg#instagram"></use>
-            </svg>
-        </a>
-          <a
-            href="https://www.facebook.com/brice.ngah.5"
-            target="_blank"
-            rel="noopener noreferrer">
-            <svg class="icon">
-              <use xlink:href="images/sprite.svg#facebook"></use>
-            </svg>
-        </a>
-          <a
-            href="https://www.linkedin.com/in/brice-ngah-essengue-4b3b6920b/"
-            target="_blank"
-            rel="noopener noreferrer">
-            <svg class="icon">
-              <use xlink:href="images/sprite.svg#linkedin"></use>
-            </svg>
-        </a>
-        
+          <ul class="list hero__list">
+            <li class="nav__item">
+              <a
+                href="https://t.me/BriceNgah"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="icon">
+                  <use xlink:href="images/sprite.svg#telegram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a
+                href="https://twitter.com/BriceNgah"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="icon">
+                  <use xlink:href="images/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a
+                href="https://www.instagram.com/bricengah/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="icon">
+                  <use xlink:href="images/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a
+                href="https://www.facebook.com/brice.ngah.5"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="icon">
+                  <use xlink:href="images/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a
+                href="https://www.linkedin.com/in/brice-ngah-essengue-4b3b6920b/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="icon">
+                  <use xlink:href="images/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
       </header>
-    </div>
+    </section>
+    <hr />
+    <section class="container profile">
+      <div class="description">
+        <h2 class="description__title">A propos de moi</h2>
+        <p>
+          Je suis un ingenieur systemes et developpeur fullstack passionne par
+          la technologie et le developpement web. Avec une solide experience
+          dans la gestion des infrastructures informatiques et le developpement
+          d'applications web, je m'efforce de creer des solutions innovantes qui
+          repondent aux besoins des utilisateurs.
+        </p>
+        <p>
+          En tant qu'ingenieur systemes, j'ai acquis une expertise dans la
+          conception, la mise en place et la gestion de systemes informatiques
+          robustes et securises. Je suis a l'aise avec les technologies de
+          virtualisation, les reseaux, la securite informatique et
+          l'automatisation des taches administratives.
+        </p>
+        <p>
+          En tant que developpeur fullstack, je maitrise les langages de
+          programmation tels que JavaScript, Python, HTML, CSS et divers
+          frameworks front-end et back-end. J'aime travailler sur des projets
+          qui combinent a la fois le developpement front-end et back-end pour
+          offrir une experience utilisateur fluide et intuitive.
+        </p>
+        <p>
+          Mon objectif est de continuer a apprendre et a evoluer dans le domaine
+          de la technologie tout en contribuant a des projets passionnants qui
+          ont un impact positif sur la societe. Je suis toujours ouvert a de
+          nouvelles opportunites de collaboration et d'apprentissage.
+        </p>
+      </div>
+      <div class="details">
+        <h2 class="details__title">Des details</h2>
+        <ul class="list details__list">
+          <li class="details__item">
+            <svg class="details__icon icon--small">
+              <use xlink:href="images/sprite.svg#emplacement"></use>
+            </svg>
+            <p>Basé à Yaoundé, Cameroun</p>
+          </li>
+          <li class="details__item">
+            <svg class="details__icon icon--small">
+              <use xlink:href="images/sprite.svg#informaticien"></use>
+            </svg>
+            <p>Ingénieur Systèmes et Développeur Fullstack</p>
+          </li>
+          <li class="details__item">
+            <svg class="details__icon icon--small">
+              <use xlink:href="images/sprite.svg#education"></use>
+            </svg>
+            <p>Diplômé en Informatique de l'Université de Yaoundé I</p>
+          </li>
+          <li class="details__item">
+            <svg class="details__icon icon--medium">
+              <use xlink:href="images/sprite.svg#passion"></use>
+            </svg>
+            <p>Passionné par le développement et les technologies émergentes</p>
+          </li>
+          <li class="details__item">
+            <svg class="details__icon icon--medium">
+              <use xlink:href="images/sprite.svg#opportunité"></use>
+            </svg>
+            <p>
+              Toujours à la recherche de nouvelles opportunités d'apprentissage
+              et de collaboration
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <hr />
+    <footer class="footer container">
+        <img src="images/droits-dauteur.png" alt="Copyright logo" >
+        <p class="footer__copyright">Copyright 2025 Millenium.</p>
+        </div>
+    </footer>
   </body>
 </html>
