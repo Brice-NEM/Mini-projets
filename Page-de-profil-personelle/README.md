@@ -1,6 +1,6 @@
 # Mini-projets
 
-Dix mini-projets niveau débutant à intermédiaire avec HTML + CSS + JS
+Quinze mini-projets niveau débutant à intermédiaire avec HTML + CSS + JS
 
 # Liens de navigation
 
