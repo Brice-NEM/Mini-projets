@@ -12,9 +12,9 @@
 }
 /* Define fonts style */
 html {
-  /* 62.5% of 16px is 10px.
+  /* 52.5% of 16px is 8.4px.
     The because the default value on navigator is 16px */
-  font-size: 62.5%;
+  font-size: 52.5%;
 }
 body {
   /* Text base style*/
@@ -29,11 +29,12 @@ h1,
 h2,
 h3 {
   /* Headings style */
-  margin: 1rem 1rem;
+  margin: 0;
   line-height: 1.5;
 }
 h1 {
   /* Main title style */
+  margin-top: 3rem;
   font-size: 3rem; /* 35px */
   font-weight: 800;
 }
@@ -41,4 +42,43 @@ h2 {
   /* Secondary title style */
   font-size: 2rem; /* 20px */
   font-weight: 600;
+}
+p {
+  margin: 0;
+}
+.box {
+  width: fit-content;
+}
+/* --- Header styles --- */
+.header {
+  text-align: end;
+  margin-top: 2rem;
+  margin-left: 20rem;
+}
+
+/* --- List styles --- */
+.list {
+  list-style: none; /* Remove default list style */
+  padding: 0; /* Remove default padding */
+  margin: 4rem 0; /* Remove default margin */
+}
+.list-item {
+  margin-bottom: 0.5rem; /* Space between list items */
+  display: flex;
+  gap: 1rem;
+}
+.list .icon {
+  fill: #000;
+}
+
+/** --- Social icons styles --- */
+.icon {
+  width: 20px;
+  height: 20px;
+  fill: #000;
+}
+.scocial-icons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
 }
