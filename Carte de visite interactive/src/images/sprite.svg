@@ -35,7 +35,11 @@
       </g>
     </g>
   </symbol>
+   <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" id="arrow_left">
+    <path d="M400-240 160-480l240-240 56 58-142 142h486v80H314l142 142-56 58Z"></path>
+  </symbol>
+   <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" id="arrow_right">
+    <path d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z"></path>
+  </symbol>
 </svg>
-<svg width="0" height="0" class="hidden">
-  
-</svg>
+

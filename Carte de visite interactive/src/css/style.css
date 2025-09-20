@@ -42,9 +42,6 @@ p {
 }
 /* --- Container styles --- */
 .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   min-height: 100vh;
   background: radial-gradient(
     circle,
@@ -166,13 +163,46 @@ p {
   height: 30px;
   fill: #073347;
 }
+
+/* navigation btn styles*/
+.navigation {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+.nav-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(10px); /*compatibilité avec Safari */
+  backdrop-filter: blur(10px); /* compatibilité avec Firefox, chrome et edge */
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+.nav-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.1);
+}
+.nav-btn .icon {
+  width: 20px;
+  height: 20px;
+  fill: white;
+}
 /* ---footer styles --- */
 .divider {
   height: 1px;
   background: #073347;
   margin: 18px 0 0 0;
 }
-
 .footer {
   display: flex;
   gap: 4rem;
