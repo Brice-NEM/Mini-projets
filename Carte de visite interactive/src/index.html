@@ -12,65 +12,71 @@
   </head>
   <body>
     <div class="container">
+      <input type="radio" name="card" id="card-1" checked>
+      <input type="radio" name="card" id="card-2">
       <div class="card-container">
-        <div class="card">
-          <div class="card__recto">
-            <div class="logo-container">
-              <img src="images/logo.png" alt="Logo of the company" class="logo" />
-              <p class="text-logo">Technologies</p>
+        <div class="carousel">
+          <div class="card">
+            <div class="card__recto">
+              <div class="logo-container">
+                <img src="images/logo.png" alt="Logo of the company" class="logo" />
+                <p class="text-logo">Technologies</p>
+              </div>
+            </div>
+            <div class="card__verso">
+              <div class="card__header">
+                <h1>Nos Services</h1>
+                <p>Solutions digitales sur mesure</p>
+              </div>
+              <ul class="card__services">
+                <li class="service__item">Création de sites web</li>
+                <li class="service__item">Développement d'applications web</li>
+                <li class="service__item">Développement d'applications mobiles</li>
+                <li class="service__item">Marketing digital</li>
+                <li class="service__item">Consultation en technologie</li>
+              </ul>
+              <div class="card__contact">
+                <h2>Contactez-nous :</h2>
+                <p class="contact-info">
+                  <strong>Email :</strong> contact@quartettechnologies.com
+                </p>
+                <p class="contact-info">
+                  <strong>WebSite :</strong> artettechnologies.com
+                </p>
+                <p class="contact-info">
+                  <strong>Téléphone :</strong> +237 6 12 34 56 78 / 6 18 23 65 89
+                </p>
+                <p class="contact-info">
+                  <strong>Adresse :</strong> Akwa, Douala - Cameroun
+                </p>
+                <div class="divider"></div>
+              </div>
+              <ul class="card__social-network">
+                <li>
+                  <svg class="icon">
+                    <use xlink:href="images/sprite.svg#twitter-x"></use>
+                  </svg>
+                </li>
+                <li>
+                  <svg class="icon">
+                    <use xlink:href="images/sprite.svg#linkedin"></use>
+                  </svg>
+                </li>
+                <li>
+                  <svg class="icon">
+                    <use xlink:href="images/sprite.svg#facebook"></use>
+                  </svg>
+                </li>
+                <li>
+                  <svg class="icon">
+                    <use xlink:href="images/sprite.svg#instagram"></use>
+                  </svg>
+                </li>
+              </ul>
             </div>
           </div>
-          <div class="card__verso">
-            <div class="card__header">
-              <h1>Nos Services</h1>
-              <p>Solutions digitales sur mesure</p>
-            </div>
-            <ul class="card__services">
-              <li class="service__item">Création de sites web</li>
-              <li class="service__item">Développement d'applications web</li>
-              <li class="service__item">Développement d'applications mobiles</li>
-              <li class="service__item">Marketing digital</li>
-              <li class="service__item">Consultation en technologie</li>
-            </ul>
-            <div class="card__contact">
-              <h2>Contactez-nous :</h2>
-              <p class="contact-info">
-                <strong>Email :</strong> contact@quartettechnologies.com
-              </p>
-              <p class="contact-info">
-                <strong>WebSite :</strong> artettechnologies.com
-              </p>
-              <p class="contact-info">
-                <strong>Téléphone :</strong> +237 6 12 34 56 78 / 6 18 23 65 89
-              </p>
-              <p class="contact-info">
-                <strong>Adresse :</strong> Akwa, Douala - Cameroun
-              </p>
-              <div class="divider"></div>
-            </div>
+          <div class="card">
 
-            <ul class="card__social-network">
-              <li>
-                <svg class="icon">
-                  <use xlink:href="images/sprite.svg#twitter-x"></use>
-                </svg>
-              </li>
-              <li>
-                <svg class="icon">
-                  <use xlink:href="images/sprite.svg#linkedin"></use>
-                </svg>
-              </li>
-              <li>
-                <svg class="icon">
-                  <use xlink:href="images/sprite.svg#facebook"></use>
-                </svg>
-              </li>
-              <li>
-                <svg class="icon">
-                  <use xlink:href="images/sprite.svg#instagram"></use>
-                </svg>
-              </li>
-            </ul>
           </div>
         </div>
       </div>
@@ -85,6 +91,10 @@
             <use xlink:href="images/sprite.svg#arrow_right"></use>
           </svg>
         </label>
+      </div>
+      <div class="card-indicators">
+        <label for="card-1" class="indicator indicator-1"></label>
+        <label for="card-2" class="indicator indicator-2"></label>
       </div>
     </div>
     <div class="footer">
