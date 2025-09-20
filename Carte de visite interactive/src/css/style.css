@@ -3,98 +3,183 @@
 *, /* All elements */
 ::after, /*After all elements*/
 ::before /*Before all elements*/ {
-  box-sizing: border-box;
-}
-/* Define a max width for the container and center it */
-.container {
-  max-width: 1200px;
-  margin: 0 auto; /* Center the container */
+  box-sizing: border-box; /*Permet d'ajuster la taille des elements en incluant le padding et la bordure dans la largeur et la hauteur totale de l'element*/
 }
 /* Define fonts style */
 html {
-  /* 52.5% of 16px is 8.4px.
+  /* 50% of 16px is 8px.
     The because the default value on navigator is 16px */
-  font-size: 52.5%;
+  font-size: 50%;
 }
 body {
   /* Text base style*/
   font-family: "Montserrat", Helvetica, sans-serif;
   color: #000;
-  font-size: 1.6rem; /* 16px */
+  font-size: 1.6rem;
   line-height: 1.5;
   margin: 0;
   letter-spacing: 1px;
 }
+/* Headings style */
 h1,
 h2,
 h3 {
-  /* Headings style */
   margin: 0;
   line-height: 1.5;
 }
+/* Main title style */
 h1 {
-  /* Main title style */
-  margin-top: 3rem;
-  font-size: 3rem; /* 35px */
+  font-size: 3rem;
   font-weight: 800;
 }
+/* Secondary title style */
 h2 {
-  /* Secondary title style */
-  font-size: 2rem; /* 20px */
+  font-size: 1.5rem;
   font-weight: 600;
 }
 p {
   margin: 0;
 }
-.box {
-  width: fit-content;
+/* --- Container styles --- */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: radial-gradient(
+    circle,
+    rgba(72, 176, 99, 1) 0%,
+    rgba(36, 106, 83, 1) 70%,
+    rgba(7, 51, 71, 1) 100%
+  );
+}
+.card-container {
+  /*Gère le positionnement global et la perspective 3D.*/
+  width: 300px;
+  height: 400px;
+  margin: 0 auto;
+  perspective: 2000px;
 }
 /* --- Card styles --- */
 .card {
-  border: 1px solid #000;
-  padding: 2rem;
-  margin: 4rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  max-width: 650px;
+  /*Gère l’animation et le style visuel de la carte.*/
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
 }
-/* --- Header styles --- */
-.header {
+.card:hover {
+  transform: rotateY(180deg);
+}
+.card__recto,
+.card__verso {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  backface-visibility: hidden;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.card__recto {
+  background: #073347;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card__verso {
+  background: #48b063;
+  color: #073347;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+}
+.card__header {
+  position: relative;
+  margin-bottom: 2rem;
+}
+.card__header::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background: #073347;
+  border-radius: 3px;
+}
+.card__services {
+  margin: 1rem 0 2rem 0;
+  padding-left: 1rem;
+  list-style: none;
+}
+.service__item {
+  padding-left: 12px;
+  position: relative;
+  font-weight: 500;
+  transition: transform 0.3s ease;
+}
+.service__item:hover {
+  transform: translateX(5px);
+}
+.service__item::before {
+  content: "-";
+  position: absolute;
+  left: 0;
+  top: -5px;
+  color: rgba(7, 51, 71, 0.8);
+  font-size: 20px;
+}
+.card__contact {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+/* --- Logo styles --- */
+.logo-container {
+  line-height: 0;
+}
+.logo {
+  width: 150px;
+  margin: 0 auto;
+}
+.text-logo {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
   text-align: end;
-  margin-top: 2rem;
-  margin-left: 20rem;
 }
-
-/* --- List styles --- */
-.list {
-  list-style: none; /* Remove default list style */
-  padding: 0; /* Remove default padding */
-  margin: 4rem 2rem; /* Remove default margin */
-}
-.list-item {
-  margin-bottom: 0.5rem; /* Space between list items */
+/* --- social network styles --- */
+.card__social-network {
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
+  margin-top: auto;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
 }
-.list .icon {
-  fill: #000;
-}
-
-/** --- Social icons styles --- */
 .icon {
-  width: 20px;
-  height: 20px;
-  fill: #000;
+  width: 30px;
+  height: 30px;
+  fill: #073347;
 }
-.scocial-icons {
-  display: flex;
-  gap: 1rem;
-  margin-top: 1rem;
+/* ---footer styles --- */
+.divider {
+  height: 1px;
+  background: #073347;
+  margin: 18px 0 0 0;
 }
 
-/* --- Card footer --- */
-.card-footer {
-  margin: 3rem 0;
-  text-align: center;
-  justify-items: center;
+.footer {
+  display: flex;
+  gap: 4rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+  background: #073347;
+  justify-content: center;
+  padding: 1rem 0;
 }

@@ -6,122 +6,79 @@
     <title>Carte de visite interactive</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="container box">
-      <div class="card">
-        <div>
-          <div class="header">
-            <h1>Ngah Essengue Brice Michel</h1>
-            <h2>Ingenieur Systemes et Reseaux</h2>
+    <div class="container">
+      <div class="card-container">
+        <div class="card">
+          <div class="card__recto">
+            <div class="logo-container">
+              <img src="images/logo.png" alt="Logo of the company" class="logo" />
+              <p class="text-logo">Technologies</p>
+            </div>
           </div>
-          <ul class="list">
-            <li class="list-item">
-              <svg class="icon">
-                <use xlink:href="images/sprite.svg#contact"></use>
-              </svg>
-              bm.nessengue@quartettechnologies.com
-            </li>
-            <li class="list-item">
-              <svg class="icon">
-                <use xlink:href="images/sprite.svg#mobile"></use>
-              </svg>
-              +237 6 1234 5678
-            </li>
-            <li class="list-item">
-              <svg class="icon">
-                <use xlink:href="images/sprite.svg#location"></use>
-              </svg>
-              Douala, Akwa - Cameroun
-            </li>
-            <li class="list-item">
-              <svg class="icon">
-                <use xlink:href="images/sprite.svg#language"></use>
-              </svg>
-              www.quartettechnologies.com
-            </li>
-          </ul>
-        </div>
-        <div class="card-footer">
-          <div class="scocial-icons">
-            <svg class="icon">
-              <use xlink:href="images/sprite.svg#linkedin"></use>
-            </svg>
-            <svg class="icon">
-              <use xlink:href="images/sprite.svg#facebook"></use>
-            </svg>
-            <svg class="icon">
-              <use xlink:href="images/sprite.svg#twitter"></use>
-            </svg>
-            <svg class="icon">
-              <use xlink:href="images/sprite.svg#instagram"></use>
-            </svg>
+          <div class="card__verso">
+            <div class="card__header">
+              <h1>Nos Services</h1>
+              <p>Solutions digitales sur mesure</p>
+            </div>
+            <ul class="card__services">
+              <li class="service__item">Création de sites web</li>
+              <li class="service__item">Développement d'applications web</li>
+              <li class="service__item">Développement d'applications mobiles</li>
+              <li class="service__item">Marketing digital</li>
+              <li class="service__item">Consultation en technologie</li>
+            </ul>
+            <div class="card__contact">
+              <h2>Contactez-nous :</h2>
+              <p class="contact-info">
+                <strong>Email :</strong> contact@quartettechnologies.com
+              </p>
+              <p class="contact-info">
+                <strong>WebSite :</strong> artettechnologies.com
+              </p>
+              <p class="contact-info">
+                <strong>Téléphone :</strong> +237 6 12 34 56 78 / 6 18 23 65 89
+              </p>
+              <p class="contact-info">
+                <strong>Adresse :</strong> Akwa, Douala - Cameroun
+              </p>
+              <div class="divider"></div>
+            </div>
+
+            <ul class="card__social-network">
+              <li>
+                <svg class="icon">
+                  <use xlink:href="images/sprite.svg#twitter-x"></use>
+                </svg>
+              </li>
+              <li>
+                <svg class="icon">
+                  <use xlink:href="images/sprite.svg#linkedin"></use>
+                </svg>
+              </li>
+              <li>
+                <svg class="icon">
+                  <use xlink:href="images/sprite.svg#facebook"></use>
+                </svg>
+              </li>
+              <li>
+                <svg class="icon">
+                  <use xlink:href="images/sprite.svg#instagram"></use>
+                </svg>
+              </li>
+            </ul>
           </div>
-          <p>@quartettechnologies</p>
-        </div>
-      </div>
-      <div class="card">
-        <div>
-          <div class="header">
-            <h1>Ngah Essengue Brice Michel</h1>
-            <h2>Fullstack Developpeur</h2>
-            <p>Web - Mobile Application</p>
-          </div>
-          <ul class="list">
-            <li class="list-item">
-              <svg class="icon">
-                <use xlink:href="images/sprite.svg#contact"></use>
-              </svg>
-              bm.nessengue@galawarelabes.com
-            </li>
-            <li class="list-item">
-              <svg class="icon">
-                <use xlink:href="images/sprite.svg#mobile"></use>
-              </svg>
-              +237 6 5678 9413
-            </li>
-            <li class="list-item">
-              <svg class="icon">
-                <use xlink:href="images/sprite.svg#location"></use>
-              </svg>
-              Douala, Bonapriso - Cameroun
-            </li>
-            <li class="list-item">
-              <svg class="icon">
-                <use xlink:href="images/sprite.svg#language"></use>
-              </svg>
-              www.galawarelabs.com
-            </li>
-          </ul>
-        </div>
-        <div class="card-footer">
-          <div class="scocial-icons">
-            <svg class="icon">
-              <use xlink:href="images/sprite.svg#linkedin"></use>
-            </svg>
-            <svg class="icon">
-              <use xlink:href="images/sprite.svg#facebook"></use>
-            </svg>
-            <svg class="icon">
-              <use xlink:href="images/sprite.svg#twitter"></use>
-            </svg>
-            <svg class="icon">
-              <use xlink:href="images/sprite.svg#instagram"></use>
-            </svg>
-          </div>
-          <p>@galawarelabs</p>
         </div>
       </div>
-      <div>
-        <p>Carte de visite interactive - 2024</p>
-        <p>Créé par Ngah Essengue Brice Michel</p>
-        <p>Tous droits réservés</p>
-      </div>
+    </div>
+    <div class="footer">
+      <p>Carte de visite interactive - 2025</p>
+      <p>Créé par Ngah Essengue Brice Michel</p>
+      <p>Tous droits réservés</p>
     </div>
   </body>
 </html>
