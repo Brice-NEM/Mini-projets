@@ -40,15 +40,11 @@ h2 {
 p {
   margin: 0;
 }
-/* --- Container styles --- */
+/*** --- General classes styles --- ***/
+/* Container styles */
 .container {
   min-height: 100vh;
-  background: radial-gradient(
-    circle,
-    rgba(72, 176, 99, 1) 0%,
-    rgba(36, 106, 83, 1) 70%,
-    rgba(7, 51, 71, 1) 100%
-  );
+  background: #1d5c50;
 }
 .card-container {
   /*Gère le positionnement global et la perspective 3D.*/
@@ -59,7 +55,7 @@ p {
   border-radius: 20px;
   perspective: 2000px;
 }
-/*Carousel style*/
+/* Carousel style */
 .carousel {
   display: flex;
   width: 200%;
@@ -91,13 +87,14 @@ p {
   border-radius: 20px;
   overflow: hidden;
 }
-.card__recto {
+/*** --- First card styles--- ***/
+.card__recto-style {
   background: #073347;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.card__verso {
+.card__verso-style {
   background: #48b063;
   color: #073347;
   transform: rotateY(180deg);
@@ -158,22 +155,88 @@ p {
   color: #fff;
   text-align: end;
 }
-/* --- social network styles --- */
-.card__social-network {
+/* --- social icons styles --- */
+.card__social-icons {
   display: flex;
   gap: 2rem;
   margin-top: auto;
   list-style: none;
   padding: 0;
   justify-content: center;
+  align-items: center;
 }
-.icon {
-  width: 30px;
-  height: 30px;
+.icon--rounded {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon--blue {
   fill: #073347;
 }
+.icon--white {
+  fill: #fff;
+}
+.icon--large {
+  width: 30px;
+  height: 30px;
+}
+.icon--medium {
+  width: 20px;
+  height: 20px;
+}
+.icon--small {
+  width: 15px;
+  height: 15px;
+}
+/*** --- Second card styles --- ***/
+.card__front {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #48b063;
+  color: #fff;
+}
+.card__back {
+  background: #073347;
+  transform: rotateY(180deg);
+}
+.profile-picture-container {
+  width: 120px;
+  height: 120px;
+}
+.profile__img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 4px solid #073347;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+.personal-info {
+  text-align: center;
+  margin-top: 2rem;
+}
+.personal-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0;
+  list-style: none;
+  padding: 0;
+  font-size: 1.2rem;
+}
+.contact__item {
+  margin: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
 
-/* navigation btn styles*/
+/* navigation button styles*/
 .navigation {
   display: flex;
   justify-content: center;
@@ -214,19 +277,17 @@ p {
   gap: 0.8rem;
 }
 .indicator {
-  width: 12px;
-  height: 12px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.3);
   cursor: pointer;
   transition: all 0.3s ease;
 }
-
 /* Radio controls */
 #card-1:checked ~ .card-container .carousel {
   transform: translateX(0%);
 }
-
 #card-2:checked ~ .card-container .carousel {
   transform: translateX(-50%);
 }

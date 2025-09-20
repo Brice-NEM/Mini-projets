@@ -16,14 +16,14 @@
       <input type="radio" name="card" id="card-2">
       <div class="card-container">
         <div class="carousel">
-          <div class="card">
-            <div class="card__recto">
+          <div class="card card-first">
+            <div class="card__recto card__recto-style">
               <div class="logo-container">
                 <img src="images/logo.png" alt="Logo of the company" class="logo" />
                 <p class="text-logo">Technologies</p>
               </div>
             </div>
-            <div class="card__verso">
+            <div class="card__verso card__verso-style">
               <div class="card__header">
                 <h1>Nos Services</h1>
                 <p>Solutions digitales sur mesure</p>
@@ -51,32 +51,90 @@
                 </p>
                 <div class="divider"></div>
               </div>
-              <ul class="card__social-network">
+              <ul class="card__social-icons">
                 <li>
-                  <svg class="icon">
+                  <svg class="icon icon--blue icon--large">
                     <use xlink:href="images/sprite.svg#twitter-x"></use>
                   </svg>
                 </li>
                 <li>
-                  <svg class="icon">
+                  <svg class="icon icon--blue icon--large">
                     <use xlink:href="images/sprite.svg#linkedin"></use>
                   </svg>
                 </li>
                 <li>
-                  <svg class="icon">
+                  <svg class="icon icon--blue icon--large">
                     <use xlink:href="images/sprite.svg#facebook"></use>
                   </svg>
                 </li>
                 <li>
-                  <svg class="icon">
+                  <svg class="icon icon--blue icon--large">
                     <use xlink:href="images/sprite.svg#instagram"></use>
                   </svg>
                 </li>
               </ul>
             </div>
           </div>
-          <div class="card">
-
+          <div class="card card-second">
+            <div class="card__recto card__front">
+              <div class="profile-picture-container">
+                <picture>
+                  <source srcset="images/profile.webp 1x" type="image/webp" />
+                  <source srcset="images/profile.png 1x" type="image/png" />
+                  <img src="images/profile.png" alt="" class="profile__img" />
+                </picture>
+              </div>
+              <div class="personal-info">
+                <h1 class="name">Ngah Essengue Brice Michel</h1>
+                <h2 class="title">Développeur Fullstack</h2>
+                <p class="company">Quartet Technologies</p>
+              </div>
+              <ul class="personal-contact">
+                <li class="contact__item">
+                  <svg class="icon icon--small icon--white">
+                    <use xlink:href="images/sprite.svg#contact"></use>
+                  </svg>
+                  <span>bm.nessengue@quartettechnologies.com</span>
+                </li>
+                <li class="contact__item">
+                  <svg class="icon icon--small icon--white">
+                    <use xlink:href="images/sprite.svg#mobile"></use>
+                  </svg>
+                  <span>+237 6 12 34 56 78</span>
+                </li>
+                <li class="contact__item">
+                  <svg class="icon icon--small icon--white">
+                    <use xlink:href="images/sprite.svg#location"></use>
+                  </svg>
+                  <span>Akwa, Douala - Cameroun</span>
+                </li>
+              </ul>
+              <ul class="card__social-icons">
+                <li class="icon--rounded">
+                  <svg class="icon icon--white icon--small "> ">
+                    <use xlink:href="images/sprite.svg#linkedin_icon"></use>
+                  </svg>
+                </li>
+                <li class="icon--rounded">
+                  <svg class="icon icon--white icon--medium">
+                    <use xlink:href="images/sprite.svg#github_icon"></use>
+                  </svg>
+                </li>
+                <li class="icon--rounded">
+                  <svg class="icon icon icon--small">
+                    <use xlink:href="images/sprite.svg#twitter-x_icon"></use>
+                  </svg>
+                </li>
+                <li class="icon--rounded">
+                  <svg class="icon icon--white icon--small">
+                    <use xlink:href="images/sprite.svg#fb_icon"></use>
+                  </svg>
+                </li>
+              </ul>
+            </div>
+            <div class="card__verso card__back">
+              <p>card back info</p>
+            </div>
           </div>
         </div>
       </div>
@@ -96,11 +154,10 @@
         <label for="card-1" class="indicator indicator-1"></label>
         <label for="card-2" class="indicator indicator-2"></label>
       </div>
-    </div>
-    <div class="footer">
-      <p>Carte de visite interactive - 2025</p>
-      <p>Créé par Ngah Essengue Brice Michel</p>
-      <p>Tous droits réservés</p>
-    </div>
+      <div class="footer">
+        <p>Carte de visite interactive - 2025</p>
+        <p>Créé par Ngah Essengue Brice Michel</p>
+        <p>Tous droits réservés</p>
+      </div>
   </body>
 </html>
