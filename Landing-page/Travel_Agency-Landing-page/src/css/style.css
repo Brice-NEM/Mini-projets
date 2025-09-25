@@ -95,3 +95,17 @@ a {
 		font-size: 1.8rem
 	}
 }
+
+/* --- Layout ---*/
+.container-full {
+	margin: 0 auto;
+	max-width: 1512px;
+	padding: 0 100px;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 1280px;
+}
+
+/* --- Components ---*/
