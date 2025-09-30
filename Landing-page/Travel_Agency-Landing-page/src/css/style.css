@@ -58,7 +58,7 @@ h2 {
 
 h3 {
 	color: var(--background-color);
-	font-family: var(--font-tertiary);
+	font-family: var(--font-secondary);
 	font-size: 2.5rem;
 	line-height: var(--line-height-base);
 }
@@ -164,6 +164,41 @@ a {
 		height: 4px;
 		color: var(--primary-color);
 		margin-top: 30px;
+	}
+
+}
+
+/*activity group*/
+.activity-group {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	width: 350px;
+	
+	align-items: center;
+}
+
+.activity-group h3 {
+	font-weight: 700;
+	text-align: center;
+}
+
+.activity-group p {
+	width: 268px;
+	text-align: center;
+	font-weight: 400;
+	margin: 0;
+}
+
+.activity-group .icon {
+	width: 8.525rem;
+	height: 6.64rem;
+}
+
+@media screen and (min-width: 768px) {
+	.activity-group .icon {
+		width: 9.8rem;
+		height: 10.5rem;
 	}
 
 }
