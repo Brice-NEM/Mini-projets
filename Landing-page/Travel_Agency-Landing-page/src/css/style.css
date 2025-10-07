@@ -296,3 +296,78 @@ a {
 	margin-left: 5px;
 	color: var(--primary-color);
 }
+
+/*Card destination*/
+.card-destination {
+	position: relative;
+	width: 350px;
+	height: 390px;
+	border-radius: 25px;
+	overflow: hidden;
+}
+
+.destination__img {
+	width: 100%;
+	height: 100%;
+}
+
+.destination__details {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.destination__details h3 {
+	font-family: DM Serif Display;
+	font-size: 4rem;
+	font-weight: 400;
+}
+
+.flag {
+	font-weight: 700;
+	text-transform: uppercase;
+	display: flex;
+	align-items: center;
+	gap: 1px;
+}
+
+.flag .icon {
+	width: 32px;
+	height: 21px;
+}
+
+.flag p {
+	color: var(--background-color);
+	margin: 0;
+}
+
+.destination__details p {
+	margin: 0;
+	color: var(--background-color);
+}
+
+.destination__details span {
+	color: var(--primary-color);
+	font-weight: 500;
+}
+
+.destination__rating {
+	display: none;
+}
+
+@media screen and (min-width: 768px) {
+	.destination__rating {
+		display: flex;
+	}
+
+	.destination__rating .icon {
+		width: 24px;
+		height: 24px;
+	}
+}
