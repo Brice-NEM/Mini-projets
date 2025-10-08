@@ -174,7 +174,6 @@ a {
 	flex-direction: column;
 	gap: 10px;
 	width: 350px;
-
 	align-items: center;
 }
 
@@ -370,4 +369,68 @@ a {
 		width: 24px;
 		height: 24px;
 	}
+}
+
+/*profil story*/
+.client-stories {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	align-items: center;
+	justify-content: center;
+	width: 250px;
+	margin: 10px 0;
+}
+
+.client-stories p {
+	font-size: 1.5rem;
+	font-weight: 400;
+	width: 242px;
+	text-align: center;
+	line-height: 1.5;
+	margin: 0;
+}
+
+.profil-client {
+	width: 125px;
+	height: 120px;
+	border: 4px solid var(--primary-color);
+	border-radius: 50%;
+	overflow: hidden;
+
+}
+
+.profil-client img {
+	width: 100%;
+	height: 100%;
+	transform: scaleX(-1);
+}
+
+.client__rating {
+	display: flex;
+}
+
+.client__rating .icon {
+	width: 24px;
+	height: 24px;
+}
+
+.client__rating span {
+	font-size: 2rem;
+	font-weight: 700;
+	margin-left: 10px;
+
+}
+
+.name {
+	font-size: 1.8rem;
+	font-weight: 700;
+	margin-top: 10px;
+}
+
+.position {
+	display: block;
+	font-size: 1.8rem;
+	color: aaaaaa;
+	text-align: center;
 }
