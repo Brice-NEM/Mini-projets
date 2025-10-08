@@ -434,3 +434,55 @@ a {
 	color: aaaaaa;
 	text-align: center;
 }
+
+/*footer*/
+.footer {
+	display: flex;
+	flex-direction: column;
+}
+
+.footer-contact {
+	width: 350px;
+	text-align: center;
+}
+
+.footer__icon {
+}
+
+.footer__list {
+}
+
+.footer__heading {
+	text-transform: uppercase;
+	font-weight: 500;
+	margin-bottom: 20px;
+	color: var(--primary-color);
+}
+
+.footer__text {
+	font-size: 1.6rem;
+	font-weight: 400;
+	/*color: var(--background-color);*/
+	line-height: 1;
+}
+
+.footer__text span {
+	display: block;
+	text-transform: none;
+	font-size: 2.2rem;
+	color: var(--primary-color);
+}
+
+.footer__item {
+	line-height: 2.1;
+}
+
+@media screen and (min-width: 768px) {
+	.footer {
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+
+
