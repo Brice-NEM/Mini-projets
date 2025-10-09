@@ -542,6 +542,80 @@ a {
 	opacity: 1;
 }
 
+/*Label input*/
+label {
+	font-family: var(--font-primary);
+	font-size: 1.6rem;
+	font-weight: 400;
+	line-height: var(--line-height-base);
+	color: var(--background-color);
+}
+
+/*input group*/
+.input-group {
+	display: flex;
+	gap: 4.8rem;
+	align-items: center;
+	border: 1px solid var(--background-color);
+	border-radius: 8px;
+	width: 31rem;
+	height: 5rem;
+	margin-top: .8rem;
+	margin-bottom: 1.5rem;
+}
+
+.input {
+	width: 201px;
+	height: 23px;
+	line-height: var(--line-height-base);
+	font-size: 1.5rem;
+	font-weight: 400;
+	outline: 0; /*annule le contour autour de l'élément*/
+	padding: 1.35rem 2.1rem;
+	border: 1px solid var(--background-color);
+	font-family: var(--font-primary);
+}
+
+/* factorise input, il ya des variation de padding à faire pour le cas avec le calendrier et sans*/
+::placeholder {
+	color: #999999;
+}
+
+.icon--calendar {
+	fill: var(--primary-color);
+	width: 19px;
+	height: 21px;
+}
+
+/*Button*/
+.btn {
+	background-color: var(--primary-color);
+	color: var(--background-color);
+	text-transform: uppercase;
+	width: 31rem;
+	height: 5rem;
+	border: none;
+	padding: 1.2rem 2.4rem;
+	font-size: 1.6rem;
+	font-weight: 600;
+	border-radius: 5rem;
+}
+
+@media screen and (min-width: 768px) {
+	.input-group {
+		width: 210px;
+		gap: 4.25rem;
+	}
+
+	.input {
+		width: 125px;
+	}
+
+	.btn {
+		width: 210px;
+	}
+}
+
 /*-- footer -- */
 .footer {
 	display: flex;
