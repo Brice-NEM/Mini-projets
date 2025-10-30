@@ -1,0 +1,69 @@
+:root{
+	/* Colors */
+	--primary-color: #17C3B2;
+	--secondary-color: #FFFFFF;
+	--text-color: #333333;
+	/* Polices */
+	--font-main:'DM Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	--font-title: 'playfair display', serif;
+}
+
+*, /* All elements */
+::after, /*After all elements*/
+::before /*Before all elements*/ {
+	box-sizing: border-box;
+}
+html{
+	/* 62.5% of 16px is 10px.
+	The because the default value on navigator is 16px */
+	font-size: 62.5%;
+}
+
+body{
+	font-family: "roboto", serif;
+	color: var(--text-color);
+	font-size: 1.8rem;
+	line-height: 1.5;
+	margin: 0;
+
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto; /* Center the container */
+}
+
+/* Title default style */
+h1, h2, h3 {
+	margin: 1rem 0;
+	line-height: 1.2;
+}
+h1{
+	font-size: 4rem;
+}
+h2{
+	font-size: 3.5rem;
+}
+h3{
+	font-size: 3rem;
+}
+p{
+	margin: 0;
+}
+a{
+	text-decoration: none;
+}
+@media screen and (min-width: 1024px){
+	body{
+		font-size: 2rem;
+	}
+	h1,h2{
+		font-size: 5rem;
+	}
+	h3{
+		font-size: 3.6rem;
+	}
+}
+
+/* Links */
+
