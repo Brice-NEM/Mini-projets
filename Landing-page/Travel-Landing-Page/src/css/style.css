@@ -75,7 +75,6 @@ a{
 	gap: 0.5rem;
 	cursor: pointer;
 }
-
 .link{
 	color: var(--primary-color);
 	font-weight:500 ;
@@ -106,3 +105,36 @@ a{
 	fill: var(--primary-color);
 	color: var(--primary-color);
 }
+/* Button */
+.btn{
+	cursor: pointer;/*permet de changer le curseur de la souris au survol d'un élément*/
+	margin: 1rem 0;
+}
+.btn--block{
+	display: inline-block;
+	width: 75%;
+}
+.btn--search{
+	color: var(--secondary-color);
+	padding: 2.5rem 4vw;
+	text-align: center;
+	white-space: nowrap;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+.btn--primary{
+	background: var(--primary-color);
+}
+.btn--round{
+	border-radius: 50%;
+}
+.btn--rounded{
+	border-radius: 40px;
+}
+@media screen and (min-width: 1024px) {
+	.btn--block {
+		width: 210px;
+		padding: 1.5rem;
+	}
+}
+
