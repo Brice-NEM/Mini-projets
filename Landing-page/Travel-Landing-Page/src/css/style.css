@@ -1,3 +1,6 @@
+/* Main style is mobile */
+/* second is desktop */
+
 :root{
 	/* Colors */
 	--primary-color: #17C3B2;
@@ -66,4 +69,40 @@ a{
 }
 
 /* Links */
+.link-arrow {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+	cursor: pointer;
+}
 
+.link{
+	color: var(--primary-color);
+	font-weight:500 ;
+}
+/*Deplacement de la fleche*/
+.link-arrow .icon-arrow{
+	transition: transform 0.5s ease;
+}
+.link-arrow:hover .icon-arrow{
+	transform: translateX(10px);
+}
+@media screen and (min-width: 1024px){
+	.link-arrow{
+		font-size: 2rem;
+	}
+}
+
+/* icons */
+.icon{
+	width: 4.5rem;
+	height: 4.5rem;
+}
+.icon-arrow{
+	width: 3rem;
+	height: 2rem;
+}
+.icon--primary{
+	fill: var(--primary-color);
+	color: var(--primary-color);
+}
