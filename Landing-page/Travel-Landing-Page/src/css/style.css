@@ -56,7 +56,7 @@ p{
 a{
 	text-decoration: none;
 }
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 768px){
 	body{
 		font-size: 2rem;
 	}
@@ -86,7 +86,7 @@ a{
 .link-arrow:hover .icon-arrow{
 	transform: translateX(10px);
 }
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 768px){
 	.link-arrow{
 		font-size: 2rem;
 	}
@@ -96,6 +96,10 @@ a{
 .icon{
 	width: 4.5rem;
 	height: 4.5rem;
+}
+.icon--small{
+	width: 1.8rem;
+	height: 2.1rem;
 }
 .icon-arrow{
 	width: 3rem;
@@ -136,5 +140,70 @@ a{
 		width: 210px;
 		padding: 1.5rem;
 	}
+}
+
+/* input */
+.field{
+	display: flex;
+	flex-direction: column;
+	width: 310px;
+}
+.field label{
+	font-family: var(--font-main), sans-serif;
+	color: var(--secondary-color);
+	font-weight: 400 ;
+	font-size: 1.6rem;
+	margin: 1rem 1rem;
+}
+.date-input{
+	position: relative;
+}
+.input{
+	font-family: var(--font-main), sans-serif;
+	font-size: 1.5rem;
+	width: 100%;
+	height: 5rem;
+	border: 1px solid var(--primary-color);
+	border-radius: 8px;
+	padding: 1.5rem 3.5rem;
+	outline: 0;
+}
+
+.input--date{
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.placeholder {
+	/*this element style placeholder*/
+	color: #999999;
+	text-align: justify;
+}
+
+.date-input .icon--small{
+	position: absolute;
+	right: 20px;
+	top: 72%;
+	transform: translateY(-50%);
+	pointer-events: none;
+}
+
+@media screen and (min-width: 768px) {
+	.field{
+		width: 210px;
+	}
+}
+
+/*Cacher l'icône native du calendrier dans les navigateurs */
+input[type="date"]::-webkit-calendar-picker-indicator {
+	opacity: 0;
+	display: none;
+	-webkit-appearance: none;
+}
+
+/* Edge + Chrome */
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-clear-button {
+	display: none;
 }
 
