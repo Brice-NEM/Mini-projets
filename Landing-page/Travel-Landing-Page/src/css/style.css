@@ -404,6 +404,34 @@ input[type="date"]::-webkit-clear-button {
 		height: 360px;
 	}
 }
+/* text header */
+.text-title{
+    width: 100%;
+    position: relative;
+}
+.text-title p{
+    font-family: var(--font-main), sans-serif;
+    text-transform: uppercase;
+    color: var(--primary-color);
+}
+.text-title span{
+    font-family: var(--font-title), serif;
+    font-size: 35px;
+    font-weight: 600;
+}
+@media screen and (min-width: 768px){
+    .text-title{
+        padding-left: 6.5rem;
+    }
+    .text-title::before{
+        content: "--------";
+        color: var(--primary-color);
+        position: absolute;
+        bottom: 10px;
+        left: 2px;
+        padding-left: 2px;
+    }
+}
 
 /* navigation bar */
 .nav{
