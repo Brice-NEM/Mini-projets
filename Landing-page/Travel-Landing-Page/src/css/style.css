@@ -489,3 +489,39 @@ input[type="date"]::-webkit-clear-button {
         overflow: visible;
     }
 }
+/* footer list */
+.footer__list{
+    width: 100%;
+}
+.footer__list .nav__list{
+    margin: 0;
+}
+.footer__list p{
+    font-weight: 500;
+    margin-bottom: 0.8rem;
+    color: var(--primary-color);
+}
+.footer__item{
+    width: auto;
+    padding: 0;
+   /* color: var(--secondary-color);*/
+    margin-top: 0.5rem;
+}
+.footer__item a{
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: var(--secondary-color);
+    transition: color 0.3s;
+}
+.footer__item a:hover{
+    color: var(--primary-color);
+}
+@media screen and (min-width: 768px){
+    .footer__list p{
+        color: black;
+    }
+    .footer__item a{
+        color: #666666;
+    }
+
+}
