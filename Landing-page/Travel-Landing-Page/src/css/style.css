@@ -108,10 +108,12 @@ a{
 .icon--primary{
 	fill: var(--primary-color);
 	color: var(--primary-color);
+    transition: fill 0.3s ease;
 }
 .icon--secondary{
     fill: var(--secondary-color);
     color: var(--secondary-color);
+    transition: fill 0.3s ease;
 }
 
 /* Button */
@@ -243,10 +245,28 @@ input[type="date"]::-webkit-clear-button {
 	border-radius: 25px;
 	overflow: hidden;
 	position: relative;
+    margin: 1rem;
 }
 .card--bg{
-	background: url("../images/image_006.webp") center/cover no-repeat;
 	width: 350px;
+}
+.card--bg__1{
+    background: url("../images/image_007.webp") center/cover no-repeat;
+}
+.card--bg__2{
+    background: url("../images/image_006.webp") center/cover no-repeat;
+}
+.card--bg__3{
+    background: url("../images/image_018.webp") center/cover no-repeat;
+}
+.card--bg__4{
+    background: url("../images/image_017.webp") center/cover no-repeat;
+}
+.card--bg__5{
+    background: url("../images/image_019.webp") center/cover no-repeat;
+}
+.card--bg__6{
+    background: url("../images/image_020.webp") center/cover no-repeat;
 }
 .card::before{
 	content: "";
@@ -259,11 +279,11 @@ input[type="date"]::-webkit-clear-button {
 .card__info{
 	display: flex;
 	flex-direction: column;
+    justify-self: center;
 	align-items: center;
 	position: absolute;
+    bottom: 4rem;
 	z-index: 2;
-	bottom: 3rem;
-	left: 7rem;
 	color: var(--secondary-color);
 }
 .card__info__flag{
@@ -292,11 +312,8 @@ input[type="date"]::-webkit-clear-button {
 }
 @media screen and (min-width: 768px) {
 	.card{
-		width: 260px;
-		height: 390px;
-	}
-	.card__info{
-		left: 5rem;
+		width: 250px;
+		height: 380px;
 	}
 	.card__info p{
 		font-size: 1.6rem;
@@ -587,7 +604,7 @@ input[type="date"]::-webkit-clear-button {
     }
 }
 
-/* ---block element--- */
+                        /* ---block element--- */
 
 /* === block features === */
 .block-features{
@@ -604,7 +621,6 @@ input[type="date"]::-webkit-clear-button {
     margin-top: 4rem;
     align-items: center;
 }
-
 @media screen and (min-width: 1024px){
     .block{
         padding: 5rem 10rem;
@@ -615,5 +631,151 @@ input[type="date"]::-webkit-clear-button {
     .feature-group{
         flex-direction: row;
     }
+}
+
+/* === block populars destinations === */
+.carrousel-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 1rem;
+}
+.header{
+    margin: 2rem 0;
+}
+
+.carrousel-block {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+.carrousel {
+    max-width: 350px;
+    width: 100%;
+    overflow: hidden;
+}
+
+/*affiche une carte sur le mobile*/
+.carrousel__track {
+    display: flex;
+    width: 600%;
+    transition: transform 0.6s ease-in-out;
+}
+
+/* Navigation par radio buttons */
+.carrousel__indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    gap: 1rem;
+}
+
+.indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #bbb;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* navigation button */
+.nav-arrow {
+    display: none;
+    width: 5rem;
+    height: 5rem;
+    border: none;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.nav-arrow--primary {
+    background: var(--primary-color);
+}
+
+.nav-arrow--secondary {
+    background: #E1E1E1;
+}
+
+/* Effet actif */
+#destination1:checked ~ .carrousel .carrousel__track{
+    transform: translateX(0%);
+}
+#destination2:checked ~ .carrousel .carrousel__track{
+    transform: translateX(-16.7%);
+}
+#destination3:checked ~ .carrousel .carrousel__track{
+    transform: translateX(-33.3%);
+}
+#destination4:checked ~ .carrousel .carrousel__track{
+    transform: translateX(-50%);
+}
+#destination5:checked ~ .carrousel .carrousel__track{
+    transform: translateX(-66.66%);
+}
+#destination6:checked ~ .carrousel .carrousel__track{
+    transform: translateX(-83.33%);
+}
+
+/* Changer la couleur du bouton actif */
+#destination1:checked ~ .carrousel .carrousel__indicators .indicator-1,
+#destination2:checked ~ .carrousel .carrousel__indicators .indicator-2,
+#destination3:checked ~ .carrousel .carrousel__indicators .indicator-3,
+#destination4:checked ~ .carrousel .carrousel__indicators .indicator-4,
+#destination5:checked ~ .carrousel .carrousel__indicators .indicator-5,
+#destination6:checked ~ .carrousel .carrousel__indicators .indicator-6 {
+    background-color: var(--primary-color);
+}
+
+/* Cacher les inputs radio */
+input[type="radio"] {
+    display: none;
+}
+/*ecran à partir de 768px*/
+@media screen and (min-width: 768px) {
+    .carrousel {
+        position: relative;
+        max-width: 790px;
+    }
+
+    .carrousel__track {
+        display: flex;
+        width: 200%;
+    }
+
+    .nav-arrow {
+        display: flex;
+    }
+    .block-space{
+        padding-left: 6.5rem;
+    }
+
+    /* Diminu la pagination en fonction de la taille de la page*/
+    label[for="destination5"],
+    label[for="destination6"] {
+        display: none;
+    }
+}
+
+/*ecran à partir 1024px*/
+@media screen and (min-width: 1024px) {
+    .carrousel {
+        max-width: 1060px;
+    }
+
+    .carrousel__track {
+        width: 150%;
+    }
+    /* Diminu la pagination en fonction de la taille de la page*/
+    label[for="destination4"],
+    label[for="destination5"],
+    label[for="destination6"] {
+        display: none;
+    }
+
 
 }
