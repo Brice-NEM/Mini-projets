@@ -43,7 +43,7 @@ p {
 /*** --- General classes styles --- ***/
 /* Container styles */
 .container {
-  min-height: 95vh;
+  min-height: 98.3vh;
   background: #1d5c50;
   padding: 4rem 2rem;
   display: flex;
