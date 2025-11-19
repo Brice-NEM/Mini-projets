@@ -533,8 +533,7 @@ input[type="date"]::-webkit-clear-button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
-    height: 380px;
+    width: 80%;
     gap: 2rem;
 }
 .testimonials__quote .icon{
@@ -553,15 +552,15 @@ input[type="date"]::-webkit-clear-button {
     transform: scaleX(-1);
 }
 .testimonial__text{
-    font-size: 15px;
+    font-size: 14px;
     text-align: center;
 }
 .testimonials__note{
     gap: 1rem;
 }
 .testimonials__note img{
-    width: 34px;
-    height: 34px;
+    width: 30px;
+    height: 30px;
 }
 .testimonials__note span{
     font-weight: 700;
@@ -579,17 +578,15 @@ input[type="date"]::-webkit-clear-button {
     color: var(--text-color);
 }
 @media screen and (min-width: 768px) {
-    .testimonials{
-        width: 510px;
-        height: 432px;
-    }
     .testimonials__quote .icon{
         position: absolute;
         left: 2%;
         bottom: 50%;
     }
+    .testimonial__text{
+        font-size: 18px;
+    }
 }
-
 
 /* collapsible */
 .collapsible__content {
@@ -959,4 +956,88 @@ input[type="radio"] {
         width: 100%;
     }
 
+}
+/* === block testimonials === */
+.section-testimonials{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.testimonials__block {
+    display: flex;
+    width: 100%;
+    transition: transform 0.6s ease-in-out;
+    align-items: center;
+}
+
+.testimonials__carrousel{
+    max-width: 390px;
+    width: 70%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.testimonials__track {
+    display: flex;
+    width: 200%;
+    transition: transform 0.6s ease-in-out;
+}
+/* Navigation par radio buttons */
+.testimonials__indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    gap: 1rem;
+}
+.back,.next{
+    display: flex;
+    width: 3.5rem;
+    height: 3.5rem;
+}
+.testimonials__note{
+    display: flex;
+}
+/* Effet actif */
+#testimonial1:checked ~ .carrousel .carrousel__track{
+    transform: translateX(0%);
+}
+#testimonial2:checked ~ .carrousel .carrousel__track{
+    transform: translateX(-50%);
+}
+
+/* Changer la couleur du bouton actif */
+#testimonial1:checked ~ .testimonials__carrousel .testimonials__indicators .indicator-1,
+#testimonial2:checked ~ .testimonials__carrousel .testimonials__indicators .indicator-2,
+#testimonial3:checked ~ .testimonials__carrousel .testimonials__indicators .indicator-3,
+#testimonial4:checked ~ .testimonials__carrousel .testimonials__indicators .indicator-4,
+#testimonial5:checked ~ .testimonials__carrousel .testimonials__indicators .indicator-5{
+    background-color: var(--primary-color);
+}
+@media screen and (min-width: 768px){
+    .section-testimonials{
+        width: 75%;
+    }
+    .testimonials__block{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+    .testimonials__track{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+    }
+    .testimonials__carrousel{
+        max-width: none;
+        width: 100%;
+    }
+    .back,.next{
+        display: flex;
+        width: 6rem;
+        height: 6rem;
+    }
 }
