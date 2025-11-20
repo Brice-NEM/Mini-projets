@@ -619,9 +619,10 @@ input[type="date"]::-webkit-clear-button {
     font-weight: 500;
     margin-bottom: 0.8rem;
     color: var(--primary-color);
+    text-transform: uppercase;
 }
 .footer__item{
-    width: auto;
+    width: 160px;
     padding: 0;
    color: var(--secondary-color);
     margin-top: 0.5rem;
@@ -1039,5 +1040,104 @@ input[type="radio"] {
         display: flex;
         width: 6rem;
         height: 6rem;
+    }
+}
+/* === footer === */
+.footer-container{
+    background: #073D37;
+    padding: 2rem 2rem;
+}
+.footer-full{
+
+}
+.footer-contact{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.footer-callout{
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+.block-texts{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.contact__help{
+    text-transform: uppercase;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+.text-heading{
+    font-size: 1.6rem;
+    color: var(--secondary-color);
+}
+.text-span{
+    display: block;
+    color: var(--primary-color);
+    font-size: 2.2rem;
+}
+.block-icons{
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1rem;
+    justify-self: center;
+}
+.icon--footer{
+    width: 2.4rem;
+    height: 2.4rem;
+}
+.footer__brand{
+    margin: 2rem auto;
+    padding: 0;
+}
+.footer__brand p{
+    display: none;
+}
+.footer__logo-1{
+    display: none;
+}
+@media screen and (min-width: 768px){
+    .footer-container{
+        background: var(--secondary-color);
+    }
+    .footer-full{
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+    }
+    .footer-callout{
+        display: flex;
+    }
+    .list-inline{
+        display: flex;
+        gap: 3.5rem;
+    }
+    .footer-contact{
+        text-align: left;
+    }
+    .block-icons{
+        justify-self: start;
+    }
+    .text-heading{
+        color: #666666;
+    }
+    .footer__brand{
+        display: flex;
+        flex-direction: revert;
+        padding: 0;
+    }
+    .footer__brand p{
+        display: block;
+        color: var(--primary-color);
+        font-size: 1.4rem;
+    }
+    .footer__logo-1{
+        display: block;
+    }
+    .footer__logo-2{
+        display: none;
     }
 }
