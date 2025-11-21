@@ -35,7 +35,9 @@ body{
 	max-width: 1200px;
 	margin: 0 auto; /* Center the container */
 }
-
+.padding{
+    padding: 5rem 0;
+}
 
 /* Title default style */
 h1, h2, h3 {
@@ -709,7 +711,8 @@ input[type="date"]::-webkit-clear-button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1rem 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 .header{
     margin: 2rem 0;
@@ -966,7 +969,8 @@ input[type="radio"] {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    padding: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .testimonials__block {
@@ -1105,6 +1109,9 @@ input[type="radio"] {
 @media screen and (min-width: 768px){
     .footer-container{
         background: var(--secondary-color);
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 8rem;
     }
     .footer-full{
         display: flex;
@@ -1199,7 +1206,7 @@ input[type="radio"] {
         position: absolute;
         align-items: center;
         padding-bottom: 4.2rem;
-        bottom: 0.6rem;
+        bottom: 0;
         width: 100%;
         background: rgba(0, 0, 0, 0.7);
     }
@@ -1219,6 +1226,11 @@ input[type="radio"] {
         display: flex;
         gap: 3rem;
         justify-self: center;
+    }
+}
+@media screen and (min-height: 1200px){
+    .header-container{
+        min-height: 60vh;
     }
 
 }
