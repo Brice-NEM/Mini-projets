@@ -1,0 +1,58 @@
+<section class="header-container">
+    <!-- nav-bar -->
+    <nav class="nav collapsible collapsible--expanded">
+        <a href="#">
+            <img alt="logo" src="images/top-logo.png" />
+        </a>
+        <svg class="icon icon--secondary nav__toggler">
+            <use xlink:href="images/sprite.svg#menu"></use>
+        </svg>
+        <ul class="nav__list list-inline collapsible__content">
+            <li class="nav__item"><a href="#">Home</a></li>
+            <li class="nav__item"><a href="#">Tour</a></li>
+            <li class="nav__item"><a href="#">Blog</a></li>
+            <li class="nav__item"><a href="#">Pages</a></li>
+            <li class="nav__item"><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="header__text">
+        <p><span>Welcome to the World
+of Extraordinary Travel</span>
+            If you're in search of exciting adventures, unforgettable experiences, and breathtaking places to explore,
+            you've come to the right place!</p>
+    </div>
+    <div class="search-container">
+        <h1>Plan your travel now</h1>
+        <div class="search-group">
+            <div class="header__search">
+                <div class="field search-input">
+                    <label for="search-1">Search Destination</label>
+                    <input class="input placeholder" id="search-1" name="destination" placeholder="Enter Destination" required type="text">
+                </div>
+                <div class="field search-input">
+                    <label for="search-2">Search Destination</label>
+                    <input class="input placeholder" id="search-2" name="destination" placeholder="Enter Destination" required type="text">
+                </div>
+                <div class="field date-input">
+                    <label for="date">Checking Date</label>
+                    <div class="date-field">
+                        <input class="input placeholder input--date" id="date-1" required type="date">
+                        <svg class="icon--small icon--primary">
+                            <use xlink:href="images/sprite.svg#icon_calendar"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="field date-input">
+                    <label for="date">Checking Date</label>
+                    <div class="date-field">
+                        <input class="input placeholder input--date-2" id="date" required type="date">
+                        <svg class="icon--small icon--primary">
+                            <use xlink:href="images/sprite.svg#icon_calendar"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <a class="btn btn--block btn--search btn--rounded btn--primary" href="#">search</a>
+        </div>
+    </div>
+</section>
